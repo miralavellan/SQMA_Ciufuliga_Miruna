@@ -1,4 +1,3 @@
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 
 import org.junit.Before;
@@ -22,6 +21,7 @@ public class PlayerTests {
 		boolean result = player1.isDead();
 		
 		assertFalse(result);
+		System.out.println(player1.getPlayerName() + " is not dead!");
 	}
 	
 }
