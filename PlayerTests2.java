@@ -1,5 +1,4 @@
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -24,6 +23,7 @@ public class PlayerTests2 {
 		int expectedResult = 50;
 		
 		assertEquals(expectedResult, player2.getPlayerHP());
+		System.out.println("Test result: " + player2.getPlayerName() + " has " + expectedResult + " HP left!");
 	}
 	
 }
