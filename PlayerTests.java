@@ -21,7 +21,7 @@ public class PlayerTests {
 		boolean result = player1.isDead();
 		
 		assertFalse(result);
-		System.out.println(player1.getPlayerName() + " is not dead!");
+		System.out.println("Test result:" + player1.getPlayerName() + " is not dead!");
 	}
 	
 }
