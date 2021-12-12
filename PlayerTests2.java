@@ -4,7 +4,7 @@ import static org.junit.Assert.assertFalse;
 import org.junit.Before;
 import org.junit.Test;
 
-public class PlayerTests {
+public class PlayerTests2 {
 	
 	Player player1;
 	Player player2;
@@ -18,10 +18,12 @@ public class PlayerTests {
 	}
 	
 	@Test
-	public void testIsDead() {
-		boolean result = player1.isDead();
+	public void testAttack() {
+		player1.attack(player2);
 		
-		assertFalse(result);
+		int expectedResult = 50;
+		
+		assertEquals(expectedResult, player2.getPlayerHP());
 	}
 	
 }
